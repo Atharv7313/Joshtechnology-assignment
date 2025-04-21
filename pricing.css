@@ -78,9 +78,9 @@
 .card:hover {
     background-color: #2091F9;
     color: white;
-    /* transform: translateY(-10px); */
-    padding: 50px 30px;
-    margin: 20px 0;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.293);
+    transition: all 0.3s ease;
 }
 .card:hover p{
     color: white;

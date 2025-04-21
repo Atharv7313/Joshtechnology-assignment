@@ -5,7 +5,7 @@ const quotes = [
     author: "John Doe",
     role: "UI Designer",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
-    color: "#1F70C1" // IBM blue
+    color: "#1F70C1", // IBM blue
   },
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
@@ -13,7 +13,7 @@ const quotes = [
     author: "Jane Smith",
     role: "Product Manager",
     img: "https://randomuser.me/api/portraits/women/44.jpg",
-    color: "#F25022" // Microsoft orange
+    color: "#F25022", // Microsoft orange
   },
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png",
@@ -21,8 +21,8 @@ const quotes = [
     author: "Emily Johnson",
     role: "Developer",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
-    color: "#A2AAAD" // Apple gray
-  }
+    color: "#A2AAAD", // Apple gray
+  },
 ];
 
 // DOM elements
@@ -51,11 +51,11 @@ function showSlide(index) {
   // Update dots
   dots.forEach((dot, i) => {
     dot.classList.remove("active");
-    dot.style.backgroundColor = "#2091F9"; // Blue color for inactive dots
+    dot.style.backgroundColor = "#FFFFFF"; // Blue color for inactive dots
   });
 
   dots[index].classList.add("active");
-  dots[index].style.backgroundColor = "#FFFFFF"; // White color for active dot
+  dots[index].style.backgroundColor = "#2091F9"; // White color for active dot
 }
 
 // Initial slide
