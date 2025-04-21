@@ -1,0 +1,80 @@
+.carousel-section {
+    /* padding: 100px 0; */
+    padding-top: 100px;
+    padding-bottom: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.carousel {
+    width: 85%;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 55px; */
+    justify-content: center;
+    align-items: center;
+  }
+.carousel h2{
+    font-size: 37px;
+    margin-bottom: 80px;
+    /* margin-top: 2px; */
+}
+
+  .logo img {
+    height: 50px;
+  }
+.logo{
+    margin-bottom: 45px;
+}
+  .text {
+    /* max-width: 200px; */
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #555;
+
+  }
+
+  .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 700px; */
+    width: 150px;
+    margin-bottom: 70px;
+  }
+
+  .author img {
+    width: 40px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+.author-text{
+font-size: 15px;
+}
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF; /* Blue color for inactive dots */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px black solid;
+    transition: background-color 0.3s ease;
+  }
+
+  .dot.active {
+    background-color: #2091F9;; /* White color for active dot */
+  }
