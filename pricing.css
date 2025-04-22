@@ -17,21 +17,19 @@
     max-width: 1800px;
     margin: 0 auto;
 }
-.pricing-text{
-    color: white;
-    text-align: center;
-    margin-bottom: 50px;
-    width: 520px;
-}
 
-.pricing-text h2 {
+.pricing-section h2 {
     font-size: 42px;
-    margin-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    color: white;
 }
 
-.pricing-text p {
+.pricing-subtitle {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    color: white;
+    line-height: 1.2;
 }
 
 .pricing-container {
@@ -83,8 +81,9 @@
     background-color: #2091F9;
     color: white;
     /* transform: translateY(-10px); */
+    transform: scale(1.1);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.293);
-    /* transition: all 0.3s ease; */
+    transition: all 0.3s ease;
     /* padding: 50px 0; */
 }
 .card:hover p{
