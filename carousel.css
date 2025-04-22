@@ -5,20 +5,22 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 99vh;
+    height: 102vh;
     justify-content: center;
     align-items: center;
     color: black;
+    height: 99vh;
 }
 .carousel {
     width: 85%;
-    height: 100%;
     text-align: center;
     /* padding: 40px 0; */
     max-width: 850px;
     display: flex;
     flex-direction: column;
     /* gap: 55px; */
+  margin-top: 50px;
+  padding: 65px 0;
     justify-content: center;
     align-items: center;
   }
@@ -26,6 +28,7 @@
     font-size: 42px;
     margin-bottom: 80px;
     font-weight: 400;
+    /* padding-top: 30px; */
     /* max-width: 200px; */
     color: #252B42;
     /* margin-top: 2px; */
@@ -35,25 +38,24 @@
     height: 50px;
   }
 .logo{
-    margin-bottom: 45px;
-    padding-bottom: 40px;
+    margin-bottom: 35px;
 }
   .text {
     /* max-width: 200px; */
     width: 100%;
     font-size: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     color: #555;
-
   }
 
   .author {
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
+    padding-top: 5px;
     /* width: 700px; */
     width: 200px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .author img {
@@ -71,6 +73,8 @@ height: 60px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 15px;
+
   }
 
   .dot {
