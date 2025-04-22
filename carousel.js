@@ -1,3 +1,4 @@
+
 const quotes = [
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
@@ -5,7 +6,6 @@ const quotes = [
     author: "John Doe",
     role: "UI Designer",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
-    color: "#1F70C1", // IBM blue
   },
   {
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
@@ -13,15 +13,13 @@ const quotes = [
     author: "Jane Smith",
     role: "Product Manager",
     img: "https://randomuser.me/api/portraits/women/44.jpg",
-    color: "#F25022", // Microsoft orange
   },
   {
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png",
+    logo: "https://pngimg.com/uploads/google/google_PNG19644.png",
     text: "Beautiful design and user-friendly. It has streamlined my workflow like never before.",
     author: "Emily Johnson",
     role: "Developer",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
-    color: "#A2AAAD", // Apple gray
   },
 ];
 
@@ -45,17 +43,14 @@ function showSlide(index) {
   authorRole.textContent = data.role;
   photo.src = data.img;
 
-  // Update text color
-  box.style.color = data.color;
-
   // Update dots
   dots.forEach((dot, i) => {
     dot.classList.remove("active");
-    dot.style.backgroundColor = "#FFFFFF"; // Blue color for inactive dots
+    dot.style.backgroundColor = "#FFFFFF"; // white color for inactive dots
   });
 
   dots[index].classList.add("active");
-  dots[index].style.backgroundColor = "#2091F9"; // White color for active dot
+  dots[index].style.backgroundColor = "#2091F9"; // blue color for active dot
 }
 
 // Initial slide

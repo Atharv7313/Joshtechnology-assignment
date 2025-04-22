@@ -1,18 +1,20 @@
 .carousel-section {
     /* padding: 100px 0; */
-    padding-top: 100px;
-    padding-bottom: 65px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 65px; */
     width: 100%;
     display: flex;
     flex-direction: row;
+    height: 99vh;
     justify-content: center;
     align-items: center;
     color: black;
 }
 .carousel {
     width: 85%;
+    height: 100%;
     text-align: center;
-    padding: 20px 0;
+    /* padding: 40px 0; */
     max-width: 850px;
     display: flex;
     flex-direction: column;
@@ -21,8 +23,11 @@
     align-items: center;
   }
 .carousel h2{
-    font-size: 37px;
+    font-size: 42px;
     margin-bottom: 80px;
+    font-weight: 400;
+    /* max-width: 200px; */
+    color: #252B42;
     /* margin-top: 2px; */
 }
 
@@ -31,11 +36,12 @@
   }
 .logo{
     margin-bottom: 45px;
+    padding-bottom: 40px;
 }
   .text {
     /* max-width: 200px; */
     width: 100%;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 50px;
     color: #555;
 
@@ -43,21 +49,23 @@
 
   .author {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
     /* width: 700px; */
-    width: 150px;
+    width: 200px;
     margin-bottom: 70px;
   }
 
   .author img {
     width: 40px;
     height: 45px;
-    margin-right: 10px;
+    margin:0 10px;
     border-radius: 50%;
   }
 .author-text{
+  color: #374754;
 font-size: 15px;
+height: 60px;
 }
   .dots {
     display: flex;
@@ -68,13 +76,14 @@ font-size: 15px;
   .dot {
     width: 20px;
     height: 20px;
-    background-color: #FFFFFF; /* Blue color for inactive dots */
+    background-color: #2091F9; /* White color for active dot */
     border-radius: 50%;
     cursor: pointer;
-    border: 1px black solid;
     transition: background-color 0.3s ease;
+    border: 1px black solid;
   }
-
+  
   .dot.active {
-    background-color: #2091F9;; /* White color for active dot */
+    background-color: #FFFFFF; /* Blue color for inactive dots */
+
   }
