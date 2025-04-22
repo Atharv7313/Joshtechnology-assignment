@@ -43,31 +43,7 @@ const pricingData = [
       <button class="order-btn">Order Now</button>
     `;
     
-    // Add hover effect to increase padding in y-direction
-    // card.addEventListener('mouseenter', () => {
-    //   card.style.paddingTop = '25px';
-    //   card.style.paddingBottom = '25px';
-    //   card.classList.add('card-active');
-    // });
-    
-    // card.addEventListener('mouseleave', () => {
-    //   card.style.paddingTop = '';
-    //   card.style.paddingBottom = '';
-    //   card.classList.remove('card-active');
-    // });
-    
-
     Pricecontainer.appendChild(card);
   });
 
-  // const cards = document.querySelectorAll('.card');
-
-  // cards.forEach(card => {
-  //   card.addEventListener('mouseenter', () => {
-  //     card.style.padding = '40px';
-  //   });
   
-  //   card.addEventListener('mouseleave', () => {
-  //     card.style.padding = '20px';
-  //   });
-  // });

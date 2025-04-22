@@ -46,11 +46,11 @@ function showSlide(index) {
   // Update dots
   dots.forEach((dot, i) => {
     dot.classList.remove("active");
-    dot.style.backgroundColor = "#FFFFFF"; // white color for inactive dots
+    dot.style.backgroundColor = "#2091F9"; // white color for inactive dots
   });
 
   dots[index].classList.add("active");
-  dots[index].style.backgroundColor = "#2091F9"; // blue color for active dot
+  dots[index].style.backgroundColor = "#FFFFFF"; // blue color for active dot
 }
 
 // Initial slide

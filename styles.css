@@ -338,22 +338,11 @@ nav{
 }
 .feature-list h3{
     font-size: 18px;
-    /* margin: 10px 0; */
-    /* padding-bottom: 6px; */
-    /* max-width: 173px; */
     width: 80%;
 
 }
 .feature-list p{
     width: 80%;
-
-    /* margin-bottom: 35px; */
-    /* margin-top: 6px; */
-    /* max-width: 183px; */
-    /* margin: 35px 35px; */
-    /* margin-left: 30px; */
-    /* margin-right: 30px; */
-    /* padding-bottom: 6px; */
     font-size: 16px;
 }
 .feature-items {
@@ -376,25 +365,20 @@ nav{
 
 
 /* Video Section */
-
-
 .video-container {
     position: relative;
+    width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-    height: 82vh;
-    border-radius: 45px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 5vw;
+    aspect-ratio: 16 / 9;
 }
+
 .video-player {
-/* position: absolute; */
-object-fit: cover;
-
-}
-
-#tutorial-video {
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -403,8 +387,12 @@ object-fit: cover;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
+    width: 12vw;
+    height: 12vw;
+    max-width: 160px;
+    max-height: 160px;
+    min-width: 60px;
+    min-height: 60px;
     background-color: #2D9CDB;
     border: none;
     border-radius: 50%;
@@ -418,7 +406,7 @@ object-fit: cover;
 
 .play-button i {
     color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-left: 5px;
 }
 
@@ -432,8 +420,15 @@ object-fit: cover;
 }
 
 .play-button.paused i:before {
-    content: "\f04c";
+    content: "\f04c"; /* Font Awesome pause icon */
 }
+
+@media (max-width: 600px) {
+    .play-button i {
+        font-size: 18px;
+    }
+}
+
 
 
 /* Organize Section */
@@ -793,6 +788,252 @@ object-fit: cover;
     .partner-item:last-child {
         border-bottom: none;
     }
+}
+
+/* carousel section  */
+.carousel-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 102vh;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 99vh;
+}
+.carousel {
+    width: 85%;
+    text-align: center;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+  margin-top: 50px;
+  padding: 65px 0;
+    justify-content: center;
+    align-items: center;
+  }
+.carousel h2{
+    font-size: 42px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    color: #252B42;
+}
+
+  .logo img {
+    height: 50px;
+  }
+.logo{
+    margin-bottom: 35px;
+}
+  .text {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 55px;
+    color: #555;
+  }
+
+  .author {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  .author img {
+    width: 40px;
+    height: 45px;
+    margin:0 10px;
+    border-radius: 50%;
+  }
+.author-text{
+  color: #374754;
+font-size: 15px;
+height: 60px;
+}
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+
+  }
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #2091F9; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+      border: 1px #7f7f7f solid;
+    background-color: #FFFFFF; 
+
+  }
+
+/* pricing section  */
+.pricing-section{
+    width: 100%;
+    background: #252B42;
+    padding-top: 95px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pricing{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.pricing-section h2 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    color: white;
+}
+
+.pricing-subtitle {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: white;
+    line-height: 1.2;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 30px;
+    width: 285px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 45px 0;
+    gap: 15px;
+}
+.card-text{
+    max-width: 130px;
+    margin-top: 25px;
+}
+.card h3 {
+    font-size: 18px;
+    color: #252B42;
+}
+
+.card p {
+    font-size: 14px;
+    color: black;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-active{
+    padding: 50px 0;
+}
+
+.card:hover {
+    background-color: #2091F9;
+    color: white;
+    /* transform: translateY(-10px); */
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.293);
+    transition: all 0.3s ease;
+    /* padding: 50px 0; */
+}
+.card:hover p{
+    color: white;
+}
+.card:hover h3{
+    color: white;
+}
+
+.price-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.price-number {
+    font-size: 62px;
+    font-weight: bold;
+    color: #252B42;
+    line-height: 1;
+}
+
+.price-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    align-items: flex-start;
+}
+
+.price-symbol {
+    font-size: 18px;
+    font-weight: bold;
+    color: #252B42;
+}
+
+.per-month {
+    font-size: 14px;
+    color: #737373;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.card:hover .price-number,
+.card:hover .price-symbol,
+.card:hover .per-month {
+    color: white;
+}
+
+.order-btn {
+    /* margin-top: 20px; */
+    background-color: #2091F9;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.order-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    
+}
+
+.card:hover .order-btn {
+    background-color: white;
+    color: #2091F9;
 }
 
 

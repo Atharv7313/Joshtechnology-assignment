@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="pricing.css">
+ 
 </head>
 
 <body>
@@ -18,11 +17,11 @@
         <nav>
             <div class="nav-logo-cont">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Product</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#carousel">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <img src="./assets/images/Rectangle 4.svg" alt="Figma Land logo" class="nav-main-logo">
             </div>
@@ -40,11 +39,11 @@
                     <img src="./assets/images/Rectangle 4.svg" alt="Figma Land logo">
                 </div>
                 <ul class="menu-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Product</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#carousel">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="close-menu" id="close-menu" onclick="toggleMenu()">
                     <i class="fa-solid fa-xmark"></i>
@@ -53,7 +52,7 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>The best products<br>start with Figma</h1>
             <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
@@ -62,7 +61,7 @@
     </section>
 
     <!-- feature section   -->
-    <section class="feature-section">
+    <section class="feature-section" id="features">
         <div class="feature">
             <h2>Features</h2>
             <p>Most calendars are designed for teams. <br>
@@ -101,6 +100,7 @@
             </div>
         </div>
     </section>
+
     <!-- Video Section -->
     <section class="video-section">
         <div class="video-container">
@@ -145,7 +145,7 @@
                         <p>Available exclusivery on Figmaland</p>
                     </div>
                     <form action="">
-                        <input type="email" name="" id="email-ip" placeholder="Your Email">
+                        <input type="email" name="" id="email-ip" placeholder="Your Email" required>
                         <button class="subscribe-btn">Subscribe</button>
                     </form>
                 </div>
@@ -154,7 +154,7 @@
     </section>
 
     <!-- Partners section -->
-    <section class="partners-section">
+    <section class="partners-section" id="partners">
         <div class="partners">
             <h2>Partners</h2>
             <p class="partners-subtitle">Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
@@ -198,7 +198,7 @@
     </section>
 
     <!-- carousel  -->
-    <section class="carousel-section">
+    <section class="carousel-section" id="carousel">
         <div class="carousel" id="carousel">
             <h2>Testimonials</h2>
 
@@ -224,9 +224,8 @@
         </div>
     </section>
 
-
     <!-- pricing   -->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
         <div class="pricing">
 
             <h2>Pricing</h2>
@@ -237,7 +236,7 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact">
             <h2>Contact Us</h2>
             <p class="contact-subtitle">Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
@@ -266,7 +265,7 @@
                         </div>
 
                         <div class="contact-info-item">
-                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-regular fa-envelope"></i>
                             <p>willie.jennings@example.com</p>
                         </div>
                     </div>
@@ -280,8 +279,8 @@
 
                     <div class="contact-social">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -297,7 +296,6 @@
         </div>
     </div>
 
-
     <!-- footer -->
     <footer>
         <div class="footer-container">
@@ -305,11 +303,11 @@
                 <div class="footer-column">
                     <h3>Pages</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -347,10 +345,10 @@
             </div>
         </div>
     </footer>
-    <script src="pricing.js"></script>
-    <script src="carousel.js"></script>
-    <script src="video.js"></script>
-    <script src="modal.js"></script>
+    <script src="./assets/js/pricing.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>
